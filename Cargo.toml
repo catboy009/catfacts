@@ -1,0 +1,21 @@
+[package]
+name = "catfacts"
+version = "0.1.0"
+authors = ["catboy <catboy009@icloud.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+css-in-rs = { git = "https://github.com/catboy009/css-in-rs.git", version = "0.2.0", features = [
+  "dioxus",
+] }
+dioxus = { version = "0.6.0-alpha.4", features = ["web", "router"] }
+dioxus-logger = "0.5.1"
+dioxus-sdk = { git = "https://github.com/DioxusLabs/sdk", branch = "feat/dioxus-0.6", features = [
+  "storage",
+] }
+manganis = "0.2.2"
+reqwest = { version = "0.12.8", features = ["json"] }
+serde = "1.0.213"
+web-sys = "0.3.72"
