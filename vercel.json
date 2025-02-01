@@ -1,18 +1,3 @@
 {
-  "version": 2,
-  "github": {
-    "enabled": false
-  },
-  "builds": [
-    {
-      "src": "/target/dx/catfacts/release/web/public/**",
-      "use": "@now/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/target/dx/catfacts/release/web/public/$1"
-    }
-  ]
+  "github": { "silent": true }
 }
